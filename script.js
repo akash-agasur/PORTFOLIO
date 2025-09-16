@@ -13,8 +13,8 @@ document.body.addEventListener("mousemove", (e) => {
 
 gsap.to(splash, {
   x: "-100%", // slide out to the left
-//   duration: 2.5, // animation duration
-//   delay: 1,
+  duration: 2.5, // animation duration
+  delay: 1,
   ease: "power2.inOut", // smooth easing
   onComplete: () => {
     splash.style.display = "none"; // hide splash after animation
@@ -23,7 +23,7 @@ gsap.to(splash, {
       { opacity: 0 }, // start invisible
       {
         opacity: 1, // fade in
-        // duration: 1,
+        duration: 1,
         display: "block", // make visible smoothly
         ease: "power2.inOut",
       }
