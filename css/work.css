@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root {
+  --beige: hsl(60, 56%, 91%);
+  --light-blue: rgb(71, 196, 212);
+  --dark-blue: hsl(229, 27%, 8%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+
+  font-family: "Poppins", sans-serif;
+  
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -47,6 +62,15 @@ body {
   padding: 1.3rem 4rem;
 }
 
+.line
+{
+  height: 1px;
+  opacity: .7;
+  width: 90%;
+  background: beige;
+  margin-left: 3rem;
+}
+
 .menu-head {
   display: flex;
   gap: 20px;
@@ -62,6 +86,7 @@ body {
 .menu-head li a {
   text-decoration: none;
   color:beige;
+   font-size: 23PX;
 }
 
 .btn-menu-ct {
@@ -73,8 +98,41 @@ body {
 
 .btn-menu-ct a {
   text-decoration: none;
-  color: #000;
+  color:var(--beige);
 }
+
+
+
+
+.btn-menu-ct {
+  background: var(--light-blue);
+  color: var(--beige);
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 20px rgba(57, 99, 243, 0.4);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.btn-menu-ct .arrow {
+  background: var(--beige);
+  color: #3963f3;
+  padding: 3px 5px;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: background 0.3s ease, color 0.3s ease; */
+}
+
 
 .hero {
   display: flex;
