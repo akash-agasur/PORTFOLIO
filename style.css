@@ -25,9 +25,9 @@ body {
    font-family: "Poppins", sans-serif;
 }
 
-body {
+/* body {
   /* overflow: hidden; */
-}
+/* } */ 
 
 .splash {
   height: 100vh;
@@ -55,6 +55,8 @@ body {
 } */
 
 .nav {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   padding: 1rem 4rem;
@@ -218,7 +220,31 @@ body {
 }
 
 footer{
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 400px;
   width: 100%;
-  background-color: var(--beige);
+  background-color: var(--dark-blue);
+  color: var(--beige);
+}
+footer p {
+  background-color: var(--dark-blue);
+}
+.author{
+  margin-top: 8rem;
+}
+.ft-head{
+  display: flex;
+  gap: 10px;
+}
+.ft-head span:hover{
+color: var(--light-blue);
+
+} 
+
+footer p span{
+  color: var(--light-blue);
 }
