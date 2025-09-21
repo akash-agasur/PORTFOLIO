@@ -36,3 +36,104 @@ document.body.addEventListener("mousemove", (e) => {
 //     );
 //   },
 // });
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  // Timeline for hero section
+  let tl = gsap.timeline();
+
+  // Animate Nav Bar
+  tl.from(".nav", {
+    y: -50,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  });
+
+  // Animate Hero Text (fade + slide)
+  tl.from(".hero .left h2", {
+    x: -50,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  })
+  .from(".hero .left h1", {
+    x: -50,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  }, "-=0.5") // overlap animation
+
+  // Animate Social Buttons
+  .from(".social-media button", {
+    y: 30,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: "back.out(1.7)"
+  });
+
+  // Floating animation for right-side image
+  gsap.to(".hero .right img", {
+    y: -20,
+    duration: 2,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut"
+  });
+});
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate Section Title + Description
+  gsap.from(".work-ct h1, .work-ct p", {
+    scrollTrigger: {
+      trigger: ".work-ct",
+      start: "top 80%",   // when section enters viewport
+      toggleActions: "play none none reverse"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out",
+    stagger: 0.3
+  });
+
+  // Animate Boxes one by one
+  gsap.from(".boxes div", {
+    scrollTrigger: {
+      trigger: ".boxes",
+      start: "top 85%",
+      toggleActions: "play none none reverse"
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "back.out(1.7)",
+    stagger: 0.3
+  });
+
+  // Animate Arrows
+  gsap.from(".right-arrow .arrow, .left-arrow .arrow", {
+    scrollTrigger: {
+      trigger: ".work-ct",
+      start: "top 90%",
+      toggleActions: "play none none reverse"
+    },
+    x: (i, el) => el.classList.contains("right-arrow") ? 50 : -50,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out"
+  });
+});
+
+
+
+
+
+
+
