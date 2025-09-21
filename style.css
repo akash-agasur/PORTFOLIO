@@ -5,7 +5,7 @@
   --beige: hsl(60, 56%, 91%);
   --light-blue: rgb(71, 196, 212);
   --dark-blue: hsl(229, 27%, 8%);
-  --Grayish-Blue: hsl(218, 22%, 67%);
+  --Grayish-Blue: hsl(194, 76%, 72%);
 
   font-family: "Poppins", sans-serif;
   
@@ -219,13 +219,82 @@ body {
   transition: transform 0.1s ease-out;
 }
 
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: var(--dark-blue);
+  color: var(--beige);
+  gap: 2rem;
+  padding: 2.5rem;
+}
+.about h1:hover{
+  color: var(--light-blue);
+}
+.about h1 span{
+  color: var(--light-blue);
+}
+.about h1 span:hover{
+  color: var(--beige);
+}
+
+.work{
+  display: flex;
+  height: 10rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--dark-blue);
+}
+.left-arrow {
+  font-size: 50px;
+  color: var(--beige);
+  cursor: pointer;
+  user-select: none;
+}
+.arrow:hover {
+  color: var(--light-blue);
+}
+
+.work-ct{
+  color: var(--beige);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-arrow {
+  font-size: 50px;
+  color: var(--beige);
+  cursor: pointer;
+  user-select: none;
+}
+.arrow:hover {
+  color: var(--light-blue);
+}
+
+.boxes{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--dark-blue);
+}
+
+.box1, .box2, .box3{
+  height: 400px;
+  width: 400px;
+  background-color: var(--beige );
+}
+
 footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  height: 400px;
+  /* gap: 1rem; */
+  height: 500px;
   width: 100%;
   background-color: var(--dark-blue);
   color: var(--beige);
@@ -234,7 +303,7 @@ footer p {
   background-color: var(--dark-blue);
 }
 .author{
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 .ft-head{
   display: flex;

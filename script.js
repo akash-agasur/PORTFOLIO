@@ -1,6 +1,11 @@
 // let splash = document.querySelector(".splash");
 // let main = document.querySelector(".main");
 let magnet = document.querySelector(".mouse-magnet");
+// let left = document.querySelector(".left")
+
+
+
+
 
 document.body.addEventListener("mousemove", (e) => {
   console.log(e.clientX);
@@ -10,6 +15,7 @@ document.body.addEventListener("mousemove", (e) => {
 
   magnet.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
 });
+
 
 // gsap.to(splash, {
 //   x: "-100%", // slide out to the left
