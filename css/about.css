@@ -137,12 +137,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 75vh;
-  width: 60%;
-  flex-direction: column;
+  width: 100%;
+  flex-direction: row;
   gap: 1rem;
   color: beige;
 }
-
+.left{
+  width: 70%;
+}
 
 .hero h2{
       font-size: 1.5rem;

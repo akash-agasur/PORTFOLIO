@@ -134,8 +134,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
-  width: 60%;
+  height: 35vh;
+  width: 100%;
   flex-direction: column;
   gap: 1rem;
   color: beige;
@@ -181,6 +181,11 @@ body {
   align-items: center;
 }
 
+
+
+
+
+
 /* MOUSE MAGNET */
 
 .mouse-magnet {
@@ -201,13 +206,25 @@ body {
   background-color: var(--dark-blue);
   display: flex;
   gap: 1rem;
+  flex-direction: column;
+}
+
+.project-box-1{
+display: flex;
+gap: 1rem;
+justify-content: space-evenly;
+}
+.project-box-2{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
 }
 
 
 .box1,.box2, .box3, .box4, .box5, .box6{
    height: 400px;
   width: 400px;
-  background-color: var(--beige );
+  background-image: linear-gradient(to right,rgb(223, 113, 10) 0%, rgb(226, 226, 13) 50%, rgb(25, 110, 136) 100%);
 }
 
 
@@ -216,7 +233,7 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* gap: 1rem; */
+  gap: 3rem;
   height: 500px;
   width: 100%;
   background-color: var(--dark-blue);
