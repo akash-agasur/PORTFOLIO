@@ -68,7 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
   .from(".social-media button", {
     y: 30,
     opacity: 0,
-    duration: 2.5,
+    duration: 1,
     stagger: 0.2,
     ease: "back.out(1.7)"
   });
