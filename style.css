@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 :root {
   /* --beige: hsl(52, 94%, 94%);
   --light-blue: rgb(71, 196, 212);
@@ -17,6 +16,8 @@
   --dark-grey: hsl(0, 0%, 32%);
   --black: hsl(0, 0%, 4%);
   --dark-black: hsl(0, 0%, 0%);
+   --roboto: "Roboto", sans-serif;
+  --font-family: "Open Sans", sans-serif;
 
   /* --font-family: "Poppins", sans-serif; */
   
@@ -72,6 +73,8 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1rem 4rem;
+  font-family: var(--font-family);
+  
 }
 .line
 {
@@ -159,10 +162,11 @@ body {
   gap: 1rem;
   color:var(--dark-black);
   /* font-family: var(); */
-  margin-left: 2rem;
+  margin-left: 6rem;
   margin-top: 2REM;
-
+  font-family: var(--font-family);
 }
+
 .short-box-main {
   display: flex;
 gap: 1rem;
@@ -209,7 +213,8 @@ margin-top: 1ren;
 
 .hero h2{
       font-size: 3rem;
-      color: var(--dark-black);
+      color: var(--black);
+      font-family: var(--font-family);
 }
 
 .hero h2 span{
@@ -217,10 +222,15 @@ margin-top: 1ren;
       top: 1%;
       font-size: 1rem;
       font-weight: 300;
+      font-family: var(--font-family);
+
 }
 .hero h1{
-  font-size: 30px;
-  line-height: 2rem;
+  /* font-size: 25px; */
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 1.5rem;
+  padding-right: 5rem;
   
 }
 .hero h1 span{
@@ -235,6 +245,7 @@ margin-top: 1ren;
 .btn-social-ct a{ 
   text-decoration:none;
   color: beige;
+  font-family: var(--font-family);
 }
 .btn-social-ct{
   padding: 10px 30px;
@@ -246,11 +257,11 @@ margin-top: 1ren;
 .social-media{
   display: flex;
   width: 60%;
-  margin-top: -30px;
+  /* margin-top: -30px; */
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
   /* margin-left: 10rem; */
 }
 
@@ -273,23 +284,29 @@ margin-top: 1ren;
 .about{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: 100vh;
   background-color: var(--grey);
   color: var(--Black);
   gap: 2rem;
-  padding: 2.5rem;
+  /* padding: 2.5rem; */
+  padding-top: 2rem;
 }
-.about h1:hover{
-  color: var(--light-blue);
-}
+
 .about h1 {
-  font-family: var(-);
+  font-family: var(--font-family);
+  /* font-weight: 900; */
+  font-size: 3.5rem;
+  font-family: var(--roboto);
 }
-.about p{
+.right {
   color: var(--Black);
   font-family: var(--font-family);
+  font-size: 2rem;
+  width: 60%;
+  /* padding: 4rem; */
+  line-height: 1.8rem;
 }
 
 .work{
