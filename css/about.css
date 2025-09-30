@@ -1,18 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 :root {
-  --beige: hsl(60, 56%, 91%);
+  /* --beige: hsl(52, 94%, 94%);
   --light-blue: rgb(71, 196, 212);
-  --dark-blue: hsl(229, 27%, 8%);
-  --Grayish-Blue: hsl(218, 22%, 67%);
+  --dark-blue: hsl(229, 85%, 13%);
+  --black: hsl(0, 0, 0);
+  --white-green: hsl(130, 45%, 90%);
+  --darker-green: hsl(182, 73%, 7%);
+  --medium-green: hsl(165, 41%, 23%);
+  --dark-green: hsl(171, 59%, 11%);
+  --green-white: hsl(139, 22%, 64%); */
 
-  font-family: "Poppins", sans-serif;
+  --white: hsl(0, 0%, 90%);
+  --grey: hsl(0, 0%, 54%);
+  --dark-grey: hsl(0, 0%, 32%);
+  --black: hsl(0, 0%, 4%);
+  --dark-black: hsl(0, 0%, 0%);
+   --roboto: "Roboto", sans-serif;
+  --font-family: "Open Sans", sans-serif;
+
+  /* --font-family: "Poppins", sans-serif; */
   
 }
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -44,13 +53,13 @@ body {
 .main {
   height: 100vh;
   width: 100%;
-  background-color: #0F111A;
+  background-color: var(--white);
   /* display: none; */
 }
 
 .logo a {
   text-decoration: none;
-  color:beige;
+  color:var(--black);
 }
 
 .nav {
@@ -64,7 +73,7 @@ body {
   height: 1px;
   opacity: .7;
   width: 90%;
-  background: beige;
+  background: var(--black);
   margin-left: 3rem;
 }
 
@@ -77,7 +86,7 @@ body {
   list-style: none;
 }
 .menu-head li:hover {
-  border-bottom: 2px solid rgb(103, 189, 250);
+  border-bottom: 2px solid var(--black);
 }
 
 .menu-head li a {
@@ -140,7 +149,7 @@ body {
   width: 100%;
   flex-direction: row;
   gap: 1rem;
-  color: beige;
+color: var(--dark-black);
 }
 .left{
   width: 70%;
@@ -166,7 +175,7 @@ body {
 }
 .hero h1 span{
   font-size: 1.5rem;
-  color: rgb(71, 196, 212);                     
+  color: var(--dark-grey);                     
 }
 
 
@@ -208,13 +217,13 @@ body {
 }
 
 .skills{
-  height: 50vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--dark-blue);
+  background-color: var(--grey);
   color: beige;
   gap: 2rem;
 }
@@ -236,8 +245,8 @@ body {
   width: 100px;
   /* background-color: orangered; */
   border-radius: 5px;
-  border: solid 0.1px var(--beige);
-  box-shadow: 1px 2px 10px var(--beige);
+  border: solid 0.1px var(--dark-grey);
+  box-shadow: 1px 2px 10px var(--dark-grey);
   display: flex;
   flex-direction: column;
   justify-content: center;

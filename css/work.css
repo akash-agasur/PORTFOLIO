@@ -1,13 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 :root {
-  --beige: hsl(60, 56%, 91%);
+  /* --beige: hsl(52, 94%, 94%);
   --light-blue: rgb(71, 196, 212);
-  --dark-blue: hsl(229, 27%, 8%);
-  --Grayish-Blue: hsl(218, 22%, 67%);
+  --dark-blue: hsl(229, 85%, 13%);
+  --black: hsl(0, 0, 0);
+  --white-green: hsl(130, 45%, 90%);
+  --darker-green: hsl(182, 73%, 7%);
+  --medium-green: hsl(165, 41%, 23%);
+  --dark-green: hsl(171, 59%, 11%);
+  --green-white: hsl(139, 22%, 64%); */
 
-  font-family: "Poppins", sans-serif;
+  --white: hsl(0, 0%, 90%);
+  --grey: hsl(0, 0%, 54%);
+  --dark-grey: hsl(0, 0%, 32%);
+  --black: hsl(0, 0%, 4%);
+  --dark-black: hsl(0, 0%, 0%);
+   --roboto: "Roboto", sans-serif;
+  --font-family: "Open Sans", sans-serif;
+
+  /* --font-family: "Poppins", sans-serif; */
   
 }
 
