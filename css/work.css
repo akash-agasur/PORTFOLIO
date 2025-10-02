@@ -55,7 +55,7 @@ body {
 .main {
   height: 100vh;
   width: 100%;
-  background-color: #0F111A;
+  background-color:white;
   /* display: none; */
 }
 
@@ -68,6 +68,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1.3rem 4rem;
+  color: var(--dark-black);
 }
 
 .line
@@ -75,7 +76,7 @@ body {
   height: 1px;
   opacity: .7;
   width: 90%;
-  background: beige;
+  background: var(--dark-black);
   margin-left: 3rem;
 }
 
@@ -93,7 +94,7 @@ body {
 
 .menu-head li a {
   text-decoration: none;
-  color:beige;
+  color:var(--dark-black);
    font-size: 23PX;
 }
 
@@ -154,15 +155,11 @@ body {
 }
 
 .hero h2{
-      font-size: 1.5rem;
+      font-size: 2rem;
+      color: var(--dark-black);
 }
 
-.hero h2 span{
-      position: relative;
-      top: 1%;
-      font-size: 1rem;
-      font-weight: 300;
-}
+
 .hero h1{
   font-size: 10rem;
   margin-left: 4rem;
@@ -215,10 +212,11 @@ body {
 }
 
 .work-box{
-  background-color: var(--dark-blue);
+  padding: 1rem;
   display: flex;
   gap: 1rem;
   flex-direction: column;
+  
 }
 
 .project-box-1{
@@ -236,6 +234,7 @@ justify-content: space-evenly;
 .box1,.box2, .box3, .box4, .box5, .box6{
    height: 400px;
   width: 400px;
+  
   background-image: linear-gradient(to right,rgb(223, 113, 10) 0%, rgb(226, 226, 13) 50%, rgb(25, 110, 136) 100%);
 }
 
@@ -246,13 +245,27 @@ footer{
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  height: 500px;
+  height: 100vh;
   width: 100%;
-  background-color: var(--dark-blue);
+  background-color: var(--dark-black);
   color: var(--beige);
 }
+
+.f-btn-social-ct a{
+  color: var(--black);
+  text-decoration: none;
+
+}
+.f-btn-social-ct{
+  /* background-color: var(--Black); */
+   padding: 10px 30px;
+  border-radius: 6px;
+  border: none;
+  /* background-color:var(--black); */
+}
+
 footer p {
-  background-color: var(--dark-blue);
+  color: var(--dark-grey);
 }
 .author{
   margin-top: 5rem;
@@ -267,5 +280,23 @@ color: var(--light-blue);
 } 
 
 footer p span{
-  color: var(--light-blue);
+  color: var(--white);
+}
+
+.bottom p{
+ position: relative;
+
+ display: flex;
+  align-items: center;
+  justify-content: center;
+ bottom: -200%;
+  padding: 10px;
+  color: white;
+  background-color: var(--dark-black);
+  font-size: 15px;
+}
+.bottom{
+
+ height: 50px;
+  width: 100%;
 }

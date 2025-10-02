@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", () => {
   tl.from(".nav", {
     y: -50,
     opacity: 0,
-    duration: 2.5,
+    duration: 2,
     ease: "power3.out"
   });
 
@@ -54,13 +54,13 @@ window.addEventListener("DOMContentLoaded", () => {
   tl.from(".hero .left h2", {
     x: -50,
     opacity: 0,
-    duration: 2.5,
+    duration: 2,
     ease: "power3.out"
   })
   .from(".hero .left h1", {
     x: -50,
     opacity: 0,
-    duration: 2.5,
+    duration: 1,
     ease: "power3.out"
   }, "-=0.5") // overlap animation
 

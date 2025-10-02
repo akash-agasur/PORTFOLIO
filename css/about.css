@@ -150,9 +150,10 @@ body {
   flex-direction: row;
   gap: 1rem;
 color: var(--dark-black);
+font-family: var(--roboto);
 }
 .left{
-  width: 70%;
+  width: 65%;
 }
 
 
@@ -172,8 +173,8 @@ color: var(--dark-black);
       font-weight: 300;
 }
 .hero h1{
-  font-size: 1.5rem;
-  margin-left: 3rem;
+  font-size: 1.7rem;
+  margin-left: 2rem;
   margin-top: 1rem;
 }
 .hero h1 span{
@@ -267,7 +268,7 @@ footer{
   justify-content: center;
   align-items: center;
   /* gap: 1rem; */
-  height: 500px;
+  height: 100vh;
   width: 100%;
   background-color: var(--dark-black);
   /* color: var(--beige); */
@@ -303,4 +304,22 @@ color: var(--light-blue);
 
 footer p span{
   color: white;
+}
+
+.bottom p{
+ position: relative;
+
+ display: flex;
+  align-items: center;
+  justify-content: center;
+ bottom: -300%;
+  padding: 10px;
+  color: white;
+  background-color: var(--dark-black);
+  font-size: 15px;
+}
+.bottom{
+  background-color: var(--dark-black);
+ height: 50px;
+  width: 100%;
 }

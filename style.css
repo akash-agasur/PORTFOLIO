@@ -425,6 +425,10 @@ footer p span{
 }
 .bottom p{
  position: relative;
+
+ display: flex;
+  align-items: center;
+  justify-content: center;
  bottom: -300%;
   padding: 10px;
   color: white;
@@ -432,6 +436,7 @@ footer p span{
   font-size: 15px;
 }
 .bottom{
+  background-color: var(--dark-black);
  height: 50px;
   width: 100%;
 }
