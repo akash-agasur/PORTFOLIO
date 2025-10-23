@@ -57,7 +57,7 @@ body {
 .main{
   height: 100vh;
   width: 40%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-color: var(--off-white);
   /* margin-left: 30%; */
 }
@@ -125,11 +125,16 @@ body {
   padding-bottom: 2rem;
 }
 
-.stack h3 {
-  padding: 2rem 0;
+.stack p {
+  padding: 5px 6px 5px 6px;
+  width: 38%;
   font-family: var(--poppins);
-  font-weight: 600;
-  font-style: 25px;
+  background-color:var(--black);
+  color: var(--off-white);
+  border-radius: 20px;
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 13px;
   /* opacity: 0.4; */
 }
 
@@ -137,6 +142,7 @@ body {
   overflow: hidden;
   position: relative;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .svg-icons {
@@ -169,4 +175,12 @@ body {
 
 .svg-icons img {
   flex-shrink: 0;
+}
+
+.certifications .box1,.box2,.box3{
+  height: 500px;
+  width: 100%;
+  background-color: var(--black);
+  border-radius: 15px;
+  margin-top: 2rem;
 }
