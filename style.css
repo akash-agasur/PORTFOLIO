@@ -21,18 +21,25 @@ body {
   width: 100%;
   background-color: var(--off-white);
 }
+.menu{
+  background-color: var(--black);
+   position: relative;
+}
 .hero{
   display: flex;
   justify-content: space-between;
 }
 
+
 .btn-box{
+  position: absolute;
+  left: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 13rem;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   gap: 10px;
   height: 200px;
   width: 70px;
@@ -54,6 +61,19 @@ body {
   font-size: 15px;
   border-radius: 5px;
 }
+.detail p {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--poppins);
+  /* opacity: 0.4; */
+  line-height: 30px;
+  letter-spacing: 1PX;
+  color: var(--black);
+  background-color: #F6F5F7;
+  margin-bottom: 2rem;
+  padding: 5px;
+}
+
 .main{
   height: 100vh;
   width: 40%;
@@ -66,7 +86,7 @@ body {
   flex-direction: column;
   justify-content: center;
   /* margin-left: 2%; */
-  margin-top: 6rem;
+  margin-top: 2rem;
   line-height: 3.2rem;
 
   /* align-items: center; */
@@ -174,15 +194,20 @@ body {
 }
 
 .works .box1,.box2,.box3{
-  height: 500px;
+  height: 400px;
   width: 100%;
   background-color: var(--black);
   border-radius: 15px;
   margin-top: 2rem;
 }
+.left{
+  width: 30%;position: relative;
+}
+
 
 .right{
  display: flex;
+ width: 30%;
  /* flex-direction: row; */
  justify-content:start;
  /* padding-right: 20rem; */
@@ -193,8 +218,8 @@ body {
 }
 .right .location{
   position: absolute;
-  margin-left: -19rem;
-  margin-bottom: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 6rem;
 }
 .certificates h1{
   font-family: var(--poppins);
@@ -209,13 +234,49 @@ body {
   border-top-left-radius: 30px;
   border-right: none;
 }
+.certify-1 .cbox1 img{
+  object-fit: contain;
+}
 .certify-1 .cbox2{
   height: 250px;
   width: 270px;
   background-color:white;
   border: 1px solid rgb(212, 210, 210);
   border-top-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5rem;
+  
 }
+.certify-1 .cbox2 h2{
+  font-family: var(--poppins);
+  font-size: 30pxrem;
+  font-weight: 500;
+}
+.certify-1 .cbox2 h3{
+  font-family: var(--poppins);
+  font-size: 20px;
+  font-weight: 500;
+}
+.certify-1 .cbox2 .hack-btn{
+  padding: 8px 15px 8px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--black);
+  color: var(--off-white);
+  margin-top: 7px;
+}
+.hack-btn p{
+font-weight:large ;
+font-family: var(--poppins);
+}
+
+
+
+
+
 .certify-1{
   display: flex;
   /* margin-top: 2rem; */
