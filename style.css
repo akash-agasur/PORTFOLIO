@@ -20,11 +20,47 @@ body {
   height: 100%;
   width: 100%;
   background-color: var(--off-white);
+  
 }
 .menu{
-  background-color: var(--black);
+  background-color: #353435;
+  /* opacity: .9; */
+  font-family: var(--poppins);
+  height: 60px;
+  width: 300px;
+  border-radius: 50px;
    position: relative;
+   position: fixed;
+   top: 38rem;
+   left: 34rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   color: white;
 }
+.home a{
+  text-decoration: none;
+  color: var(--off-white);
+  opacity: .8;
+}
+.about a{
+  text-decoration: none;
+  color: var(--off-white);
+  opacity: .8;
+}
+.work a{
+  text-decoration: none;
+  color: var(--off-white);
+  opacity: .8;
+}
+.contact a{
+  text-decoration: none;
+  color: var(--off-white);
+  opacity: .8;
+}
+
 .hero{
   display: flex;
   justify-content: space-between;
@@ -70,6 +106,7 @@ body {
   letter-spacing: 1PX;
   color: var(--black);
   background-color: #F6F5F7;
+  /* opacity: .7; */
   margin-bottom: 2rem;
   padding: 5px;
 }
@@ -324,4 +361,99 @@ font-family: var(--poppins);
   display: flex;
   /* margin-top: 2rem; */
   /* gap: 1px; */
+}
+
+
+.contact-section {
+  margin-top: 2rem;
+  height: 200px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  border-top: 2px solid #000;
+  padding-top: 20px;
+}
+
+/* Left side */
+.contact-right h2 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-family: var(--poppins);
+}
+
+/* Right side (links) */
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  flex: 1;
+}
+
+.contact-left a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+  font-size: 17px;
+  text-transform: uppercase;
+  /* padding-bottom: 1px; */
+  font-family: var(--poppins);
+  width: fit-content;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-left a:hover {
+  color: #666;
+  border-color: #666;
+}
+.twt-line{
+  height: 1px;
+  width: 80%;
+  background-color: var(--black);
+}
+.link-line{
+  height: 1px;
+  width: 80%;
+  background-color: var(--black);
+
+}
+.git-line{
+  height: 1px;
+  width: 80%;
+  background-color: var(--black);
+
+}
+
+
+footer, .h1{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:145rem;
+  height: 300px;
+  font-family: var(--poppins);
+  font-weight: 1500;
+  font-size: 5rem;
+  width: max-content;
+   animation: scrollLeft 20s linear infinite;
+   object-fit: contain;
+
+   
+}
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
