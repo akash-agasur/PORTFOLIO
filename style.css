@@ -22,6 +22,15 @@ body {
   background-color: var(--off-white);
   
 }
+
+.blur{
+  position: fixed;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent, white);
+
+}
 .menu{
   background-color: #353435;
   /* opacity: .9; */
@@ -97,6 +106,7 @@ body {
   font-size: 15px;
   border-radius: 5px;
 }
+
 .detail p {
   font-size: 13px;
   font-weight: 600;
@@ -238,7 +248,8 @@ body {
   margin-top: 2rem;
 }
 .left{
-  width: 30%;position: relative;
+  width: 30%;
+  position: relative;
 }
 
 
@@ -430,7 +441,11 @@ font-family: var(--poppins);
   background-color: var(--black);
 
 }
+/* 
+footer{
+  overflow: hidden;
 
+}
 
 footer, .h1{
 
@@ -455,5 +470,77 @@ footer, .h1{
   }
   100% {
     transform: translateX(-50%);
+  }
+} */
+
+ /* Stick footer to bottom */
+/* footer {
+  position: relative;
+  bottom: 0;
+  
+  width: 100%;
+  overflow: hidden;
+  background: #c4c3c3;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.over {
+  display: flex;
+  width: max-content;
+  animation: marquee 12s linear infinite;
+}
+
+.over h1 {
+  font-size: 10rem;
+  white-space: nowrap;
+  margin: 0 50px;
+  letter-spacing: 2px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+} */
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100vw; /* Full width */
+  overflow: hidden;
+  /* background: #c4c3c3; */
+  color: #fff;
+  height: 40vh; /* Adjust for section height */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* 👈 Start from the left */
+}
+
+.over {
+  display: flex;
+  width: max-content;
+  animation: marquee 15s linear infinite;
+}
+
+.over h1 {
+  font-size: 8rem;
+  white-space: nowrap;
+  margin: 0 80px;
+  letter-spacing: 4px;
+  color: #000;
+  font-family: var(--poppins);
+  font-weight: 700;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0); /* Start fully at the left */
+  }
+  100% {
+    transform: translateX(-100%); /* Move fully off screen */
   }
 }
