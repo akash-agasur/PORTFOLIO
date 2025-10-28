@@ -175,17 +175,21 @@ body {
   font-family: var(--poppins);
   margin-top: 2rem;
   color: var(--black);
+  padding-bottom: 1rem;
 }
 
 .stack {
   background-color: var(--off-white);
   /* padding-left: 2rem; */
   padding-bottom: 2rem;
+  
 }
 
 .stack p {
-  padding: 5px 6px 5px 6px;
-  width: 38%;
+  padding: 7px 10px ;
+  /* margin-top: rem; */
+  /* width: 38%; */
+  display: inline;
   font-family: var(--poppins);
   background-color:var(--black);
   color: var(--off-white);
