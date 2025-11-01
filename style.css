@@ -49,6 +49,10 @@ body {
    gap: 1rem;
    color: white;
 }
+.menu:hover{
+  height: 63px;
+  width: 310px;
+}
 .home a{
   text-decoration: none;
   color: var(--off-white);
@@ -185,8 +189,8 @@ body {
   
 }
 
-.stack p {
-  padding: 7px 10px ;
+.stack button {
+  padding: 5px 10px ;
   /* margin-top: rem; */
   /* width: 38%; */
   display: inline;
@@ -238,19 +242,140 @@ body {
 .svg-icons img {
   flex-shrink: 0;
 }
+.experience{
+  margin-top: 1rem;
+}
+.experience h2{
+  font-family: var(--poppins);
+  color: var(--black);
+}
+.experience h1{
+  font-family: var(--poppins);
+  color: var(--black);
+}
+.phead {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 10px;
+}
+.experience p{
+  font-family: var(--poppins);
+  color: var(--black);
+}
+
 .work-head{
   font-family: var(--poppins);
   color: var(--black);
+  margin-top: 1rem;
   /* margin-left: 5.5rem; */
 }
+.works1, .works2, .works3{
+  height: 510px;
+  width: 100%;
+}
 
-.works .box1,.box2,.box3{
+.works, .box1,.box2,.box3{
   height: 400px;
   width: 100%;
   background-color: var(--black);
   border-radius: 15px;
   margin-top: 2rem;
+  font-family: var(--poppins);
 }
+                                               /* -------------box1-------------- */
+.work1{
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+ 
+}
+.w-button-1{
+  /* height: 2rem; */
+margin-top: .5rem;
+}
+.w-button-1 button a{
+  font-family: var(--poppins);
+  text-decoration: none;
+  padding: 7px 14px;
+color: var(--off-white);
+border: none;
+border-radius: 10px;
+background-color: var(--black);
+}
+
+.box1 h2{
+  font-family: var(--poppins);
+  color: var(--black);
+}
+.box1 p{
+  color: var(--black);
+  opacity: .7;
+  font-family: var(--poppins);
+}
+                                                       /* ------------box2--------- */
+.w-button-2{
+  /* height: 2rem; */
+margin-top: .5rem;
+}
+.w-button-2 button a{
+  font-family: var(--poppins);
+  text-decoration: none;
+  padding: 7px 14px;
+color: var(--off-white);
+border: none;
+border-radius: 10px;
+background-color: var(--black);
+}
+
+.box2 h2{
+  font-family: var(--poppins);
+  color: var(--black);
+}
+.box2 p{
+  color: var(--black);
+  opacity: .7;
+  font-family: var(--poppins);
+}
+
+.work2{
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+  
+}
+                                          /* ---------------box3---------------- */
+
+.w-button-3{
+  /* height: 2rem; */
+margin-top: .5rem;
+}
+.w-button-3 button a{
+  font-family: var(--poppins);
+  text-decoration: none;
+  padding: 7px 14px;
+color: var(--off-white);
+border: none;
+border-radius: 10px;
+background-color: var(--black);
+}
+
+.box3 h2{
+  font-family: var(--poppins);
+  color: var(--black);
+}
+.box3 p{
+  color: var(--black);
+  opacity: .7;
+  font-family: var(--poppins);
+}
+
+.work3{
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+
 .left{
   width: 30%;
   position: relative;
@@ -277,7 +402,7 @@ body {
   font-family: var(--poppins);
   padding: 1rem 0 1rem 0;
 }
-
+                                       /* -----------1 certificate------ */
 .certify-1 .cbox1{
   height: 250px;
   width: 270px;
@@ -340,6 +465,11 @@ font-family: var(--poppins);
   background-color: white;
   border: 1px solid rgb(212, 210, 210);
   border-top: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--poppins);
   
 }
 .certify-2 .cbox2{
@@ -349,6 +479,28 @@ font-family: var(--poppins);
   border: 1px solid rgb(212, 210, 210);
   border-left: none;
   border-top: none;
+}
+.certify-2 .cbox2 img{
+  object-fit: contain;
+  overflow:hidden;
+}
+.certify-2 .cbox1 h2{
+  font-family: var(--poppins);
+  font-size: 30pxrem;
+  font-weight: 500;
+}
+.certify-2 .cbox1 h3{
+  font-family: var(--poppins);
+  font-size: 20px;
+  font-weight: 500;
+}
+.certify-2 .cbox1 .course-btn{
+  padding: 8px 15px 8px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--black);
+  color: var(--off-white);
+  margin-top: 7px;
 }
 .certify-2{
   display: flex;
@@ -514,7 +666,7 @@ footer {
   position: relative;
   bottom: 0;
   left: 0;
-  width: 100vw; /* Full width */
+  width: 100%; /*Full width */
   overflow: hidden;
   /* background: #c4c3c3; */
   color: #fff;
@@ -545,6 +697,16 @@ footer {
     transform: translateX(0); /* Start fully at the left */
   }
   100% {
-    transform: translateX(-100%); /* Move fully off screen */
+    transform: translateX(-50%); /* Move fully off screen */
+  }
+}
+
+
+@media (max-width: 700px) {
+  .left{
+    display: none;
+  }
+   .right{
+    display: none;
   }
 }
