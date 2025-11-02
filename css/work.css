@@ -139,71 +139,130 @@ body {
   
 }
                       /* ----------------work-1 */
+
 .work h1{
   margin-bottom: 1rem;
   font-family: var(--poppins);
   color: var(--black);
 }
-.work-box1{
+
+
+.work-box1 img{
   height: 400px;
   width: 100%;
-  background-color: white;
+  /* background-color: black; */
   border-radius: 20px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .work-box1, h2{
   font-family: var(--poppins);
   margin-top: 10px;
   color: var(--black);
 }
-.work-box1, p{
+.work-box1  p{
   font-family: var(--poppins);
   color: var(--black);
-  opacity: .9;
+  opacity: .7;
 
 }
+
+
+.w-button-1 button{
+  font-family: var(--poppins);
+  border: none;
+  padding: 7px 14px;
+border-radius: 10px;
+background-color: var(--black);
+margin-top: 1rem;
+}
+
+.w-button-1 button a{
+text-decoration: none;
+color: var(--off-white);
+}
+
                                  /* ---------------------work-2----------- */
-.work-box2{
-  height: 400px;
+.work2{
+  margin-top: 3rem;
+}
+.work-box2 img{
+ height: 400px;
   width: 100%;
-  background-color: white;
+  background-color: black;
   border-radius: 20px;
+  object-fit: cover;
 }
 .work-box2, h2{
   font-family: var(--poppins);
   margin-top: 10px;
   color: var(--black);
 }
-.work-box2, p{
+.work-box2 p{
   font-family: var(--poppins);
   color: var(--black);
-  opacity: .9;
+  opacity: .7;
 
 }
+
+.w-button-2 button{
+  font-family: var(--poppins);
+  border: none;
+  padding: 7px 14px;
+border-radius: 10px;
+background-color: var(--black);
+margin-top: 1rem;
+}
+
+.w-button-2 button a{
+text-decoration: none;
+color: var(--off-white);
+}
                              /* --------------------work-3----------------- */
-.work-box3{
-  height: 400px;
+.work3{
+  margin-top: 3rem;
+}
+.work-box3 img{
+ height: 400px;
   width: 100%;
-  background-color: white;
+  background-color: black;
   border-radius: 20px;
+  object-fit: cover;
 }
 .work-box3, h2{
   font-family: var(--poppins);
   margin-top: 10px;
   color: var(--black);
 }
-.work-box3, p{
+.work-box3 p{
   font-family: var(--poppins);
   color: var(--black);
-  opacity: .9;
+  opacity: .7;
 
 }
+
+.w-button-3 button{
+  font-family: var(--poppins);
+  border: none;
+  padding: 7px 14px;
+border-radius: 10px;
+background-color: var(--black);
+margin-top: 1rem;
+}
+
+.w-button-3 button a{
+text-decoration: none;
+color: var(--off-white);
+}
                              /* -------------------work-4--------------- */
-.work-box4{
-  height: 400px;
+.work4{
+  margin-top: 3rem;
+}
+.work-box4 img{
+ height: 400px;
   width: 100%;
-  background-color: white;
+  background-color: black;
   border-radius: 20px;
+  object-fit: cover;
 }
 .work-box4, h2{
   font-family: var(--poppins);
@@ -217,24 +276,51 @@ body {
 
 }
 
+.w-button-4 button{
+  font-family: var(--poppins);
+  border: none;
+  padding: 7px 14px;
+border-radius: 10px;
+background-color: var(--black);
+margin-top: 1rem;
+}
+
+.w-button-4 button a{
+text-decoration: none;
+color: var(--off-white);
+}
+
 
 .right{
  display: flex;
  width: 30%;
  /* flex-direction: row; */
- justify-content:start;
+ justify-content:end;
  /* padding-right: 20rem; */
  align-items: end;
   color: var(--black);
   font-family: var(--poppins);
   position: relative;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
 }
 .right .location{
   position: absolute;
   margin-left: 2rem;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
+ .timer {
+      /* background: #c0c0c5; */
+      color: var(--black);
+      font-family: var(--poppins);
+      font-size: 26px;
+      /* font-weight:600; */
+      padding: 10px 20px;
+      border-radius: 25px;
+      margin-left: 2rem;
+
+    }
 
 
 .contact-section {
@@ -315,7 +401,7 @@ footer, .h1{
   justify-content: center;
   align-items: center;
   position: relative;
-  top:100rem;
+  top:118rem;
   height: 300px;
   font-family: var(--poppins);
   font-weight: 1500;
@@ -350,4 +436,5 @@ footer, .h1{
    .right{
     display: none;
   }
+ 
 }

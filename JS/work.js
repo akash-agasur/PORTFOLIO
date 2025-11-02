@@ -10,3 +10,4 @@ function updateTime() {
 
 updateTime(); // start me time show kare
 setInterval(updateTime, 1000); // har second update kare
+

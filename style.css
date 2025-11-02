@@ -17,7 +17,7 @@
 }
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   background-color: var(--off-white);
   
@@ -126,7 +126,7 @@ body {
 }
 
 .main{
-  height: 100vh;
+  /* height: 100vh; */
   width: 550px;
   /* border: 1px solid black; */
   background-color: var(--off-white);
@@ -275,20 +275,31 @@ body {
   width: 100%;
 }
 
-.works, .box1,.box2,.box3{
-  height: 400px;
-  width: 100%;
-  background-color: var(--black);
-  border-radius: 15px;
-  margin-top: 2rem;
-  font-family: var(--poppins);
-}
+
                                                /* -------------box1-------------- */
-.work1{
-  height: 400px;
-  width: 100%;
-  object-fit: contain;
+
+
+
+
+
+
+
+
+
+
+
+
+ .works1 img{
+   /* height: 100%;  */
+   height: 400px;
+   width: 100%;
+   object-fit: cover; 
+   background: black;
  
+}
+
+.box1 img{
+  border-radius: 20px;
 }
 .w-button-1{
   /* height: 2rem; */
@@ -304,11 +315,11 @@ border-radius: 10px;
 background-color: var(--black);
 }
 
-.box1 h2{
+.work-ct h2{
   font-family: var(--poppins);
   color: var(--black);
 }
-.box1 p{
+.work-ct p{
   color: var(--black);
   opacity: .7;
   font-family: var(--poppins);
@@ -338,11 +349,17 @@ background-color: var(--black);
   font-family: var(--poppins);
 }
 
-.work2{
-  height: 400px;
-  width: 100%;
-  object-fit: contain;
-  
+.works2 img{
+   /* height: 100%;  */
+   height: 400px;
+   width: 100%;
+   object-fit: cover; 
+   background: black;
+ 
+}
+
+.box2 img{
+  border-radius: 20px;
 }
                                           /* ---------------box3---------------- */
 
@@ -370,10 +387,13 @@ background-color: var(--black);
   font-family: var(--poppins);
 }
 
-.work3{
-  height: 400px;
-  width: 100%;
-  object-fit: contain;
+.works3 img{
+   /* height: 100%;  */
+   height: 400px;
+   width: 100%;
+   border-radius: 20px;
+   object-fit: contain; 
+ 
 }
 
 .left{
@@ -385,19 +405,37 @@ background-color: var(--black);
 .right{
  display: flex;
  width: 30%;
- /* flex-direction: row; */
- justify-content:start;
+ flex-direction: column;
+ /* justify-content:end; */
  /* padding-right: 20rem; */
  align-items: end;
   color: var(--black);
   font-family: var(--poppins);
   position: relative;
+  margin-top: 35rem;
+  margin-right: 3rem;
+  /* line-height: ; */
+ 
 }
 .right .location{
   position: absolute;
   margin-left: 2rem;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
+
+ .timer {
+      /* background: #c0c0c5; */
+      color: var(--black);
+      font-family: var(--poppins);
+      font-size: 26px;
+      /* font-weight:600; */
+      padding: 10px 20px;
+      border-radius: 25px;
+      margin-left: 2rem;
+      margin-top: 1.5rem;
+
+    }
+
 .certificates h1{
   font-family: var(--poppins);
   padding: 1rem 0 1rem 0;
@@ -709,4 +747,24 @@ footer {
    .right{
     display: none;
   }
+
+
+  .menu{
+  background-color: #353435;
+  /* opacity: .9; */
+  font-family: var(--poppins);
+  height: 60px;
+  width: 300px;
+  border-radius: 50px;
+   position: relative;
+   position: fixed;
+   top: 38rem;
+   left: 7rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   color: white;
+}
 }
