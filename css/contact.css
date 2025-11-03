@@ -44,6 +44,15 @@ body {
    gap: 1rem;
    color: white;
 }
+
+.blur{
+  position: fixed;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent, white);
+
+}
 .home a{
   text-decoration: none;
   color: var(--off-white);
@@ -311,39 +320,41 @@ button:hover {
   background-color: var(--black);
 
 }
-footer, .over{
-  /* background-color: yellow; */
-  position: relative;
-  overflow: hidden;
-   width: 100%;
-}
-footer, .h1{
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+
+
+.footer-container {
+  width: 100%;
+  overflow: hidden;
   position: relative;
-  top:10rem;
-  height: 300px;
+  top: 12rem; /* hides the scrollbar */
+}
+
+.footscroll {
+  display: flex;
+  gap: 6rem;
+  width: max-content;
+  animation: scrollLeft 20s linear infinite;
+}
+
+.footscroll h1 {
+  
   font-family: var(--poppins);
   font-weight: 1500;
-  font-size: 5rem;
-  width: max-content;
-   animation: scrollLeft 20s linear infinite;
-   object-fit: contain;
-
-   
+  font-size: 10rem;
+  /* white-space: nowrap; */
 }
+
 @keyframes scrollLeft {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
-
-
 @media (max-width: 700px) {
   .left{
     display: none;
@@ -351,4 +362,41 @@ footer, .h1{
    .right{
     display: none;
   }
+
+
+
+   .menu{
+  background-color: #353435;
+  /* opacity: .9; */
+  font-family: var(--poppins);
+  height: 60px;
+  width: 300px;
+  border-radius: 50px;
+   position: relative;
+   position: fixed;
+   top: 34rem;
+   left: 5rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   color: white;
+}
+
+.blur{
+  position: fixed;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent, white);
+
+}
+
+  .footer-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 15rem; /* hides the scrollbar */
+}
 }
