@@ -35,7 +35,7 @@ body {
   position: fixed;
    position: relative;
    position: fixed;
-   top: 38rem;
+   bottom: 10px;
    left: 34rem;
    display: flex;
    flex-direction: row;
@@ -363,6 +363,10 @@ button:hover {
     display: none;
   }
 
+  .main{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
 
    .menu{
@@ -374,8 +378,8 @@ button:hover {
   border-radius: 50px;
    position: relative;
    position: fixed;
-   top: 34rem;
-   left: 5rem;
+   bottom: 10px;
+   left: 2.5rem;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -392,11 +396,19 @@ button:hover {
   background-image: linear-gradient(to bottom, transparent, white);
 
 }
+.contact-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.contact-left{
+  width: 60%;
+  
+}
 
   .footer-container {
   width: 100%;
   overflow: hidden;
   position: relative;
-  top: 15rem; /* hides the scrollbar */
+  top: 27rem; /* hides the scrollbar */
 }
 }

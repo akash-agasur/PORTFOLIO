@@ -42,7 +42,7 @@ body {
   position: fixed;
    position: relative;
    position: fixed;
-   top: 38rem;
+   bottom: 10px;
    z-index: 1;
    left: 34rem;
    display: flex;
@@ -445,7 +445,10 @@ color: var(--off-white);
     display: none;
   }
 
-
+.main{
+  padding-left: 10px;
+  padding-right: 10px;
+}
   
  .menu{
   background-color: #353435;
@@ -456,8 +459,8 @@ color: var(--off-white);
   border-radius: 50px;
    position: relative;
    position: fixed;
-   top: 34rem;
-   left: 5rem;
+   bottom: 10px;
+   left: 2.5rem;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -474,12 +477,20 @@ color: var(--off-white);
   background-image: linear-gradient(to bottom, transparent, white);
 
 }
+.contact-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.contact-left{
+  width: 60%;
+  
+}
  
 .footer-container {
   width: 100%;
   overflow: hidden;
   position: relative;
-  top: 130rem; 
+  top: 140rem; 
 }
 
 }

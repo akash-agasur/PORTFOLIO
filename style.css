@@ -40,7 +40,8 @@ body {
   border-radius: 50px;
    position: relative;
    position: fixed;
-   top: 38rem;
+   /* top: 38rem; */
+   bottom: 10px;
    left: 34rem;
    display: flex;
    flex-direction: row;
@@ -311,11 +312,14 @@ margin-top: .5rem;
   text-decoration: none;
   padding: 7px 14px;
 color: var(--off-white);
-border: none;
+
 border-radius: 10px;
 background-color: var(--black);
 }
+.w-button-1 button{
+  border: none;
 
+}
 .work-ct h2{
   font-family: var(--poppins);
   color: var(--black);
@@ -335,9 +339,13 @@ margin-top: .5rem;
   text-decoration: none;
   padding: 7px 14px;
 color: var(--off-white);
-border: none;
+
 border-radius: 10px;
 background-color: var(--black);
+}
+.w-button-2 button{
+  border: none;
+
 }
 
 .box2 h2{
@@ -349,6 +357,7 @@ background-color: var(--black);
   opacity: .7;
   font-family: var(--poppins);
 }
+
 
 .works2 img{
    /* height: 100%;  */
@@ -488,10 +497,6 @@ background-color: var(--black);
 font-weight:large ;
 font-family: var(--poppins);
 }
-
-
-
-
 
 .certify-1{
   display: flex;
@@ -746,6 +751,8 @@ footer, .h1{
   .main{
   /* height: 100vh; */
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   /* border: 1px solid black; */
   background-color: var(--off-white);
   /* margin-left: 30%; */
@@ -761,8 +768,8 @@ footer, .h1{
   border-radius: 50px;
    position: relative;
    position: fixed;
-   top: 38rem;
-   left: 7rem;
+   bottom: 10px;
+   left: 2.5rem;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -777,5 +784,56 @@ footer, .h1{
   width: 100%;
   background-image: linear-gradient(to bottom, transparent, white);
 
+}
+
+.works2{
+  margin-top: 2rem;
+}
+.certify-1{
+  flex-direction: column; 
+}
+.certify-1 .cbox1{
+width: 80%;
+padding-left: 6px;
+object-fit: contain;
+  border-right:1px solid rgb(212, 210, 210);
+  border-top-left-radius: 30px;
+   border-top-right-radius: 30px;
+}
+.certify-1 .cbox2{
+  border-top-right-radius: 0;
+  width: 80%;
+}
+
+.certify-2{
+  display: flex;
+  flex-direction: column-reverse;
+  /* margin-top: 2rem; */
+  /* gap: 1p
+  x; */
+}
+.certify-2 .cbox1{
+  width: 80%;
+  border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+}
+.certify-2 .cbox2{
+  width: 80%;
+  border-left:1px solid rgb(212, 210, 210);
+  
+}
+.contact-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.contact-left{
+  width: 60%;
+  
+}
+.footer-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 8rem; 
 }
 }

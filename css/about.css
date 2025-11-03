@@ -35,7 +35,7 @@ body {
   position: fixed;
    position: relative;
    position: fixed;
-   top: 38rem;
+   bottom: 10px;
    left: 34rem;
    display: flex;
    flex-direction: row;
@@ -347,6 +347,10 @@ body {
    .right{
     display: none;
   }
+  .main{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
 
 
@@ -359,8 +363,8 @@ body {
   border-radius: 50px;
    position: relative;
    position: fixed;
-   top: 34rem;
-   left: 5rem;
+ bottom: 10px;
+   left: 2.5rem;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -377,10 +381,18 @@ body {
 
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.contact-left{
+  width: 60%;
+  
+}
   .footer-container {
   width: 100%;
   overflow: hidden;
   position: relative;
-  top: 30rem; 
+  top: 47rem; 
   }
 }
