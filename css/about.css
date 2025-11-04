@@ -17,7 +17,7 @@
 }
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   background-color: var(--off-white);
   
@@ -126,7 +126,7 @@ body {
 }
 
 .main{
-  height: 100vh;
+  /* height: 100vh; */
   width: 550px;
   /* border: 1px solid black; */
   background-color: var(--off-white);
@@ -208,15 +208,17 @@ body {
 .right{
  display: flex;
  width: 30%;
- /* flex-direction: row; */
- justify-content:end;
+ flex-direction: column;
+ /* justify-content:end; */
  /* padding-right: 20rem; */
  align-items: end;
   color: var(--black);
   font-family: var(--poppins);
   position: relative;
-  margin-bottom: 3rem;
+  margin-top: 35rem;
   margin-right: 3rem;
+  /* line-height: ; */
+ 
 }
 .right .location{
   position: absolute;
@@ -226,17 +228,16 @@ body {
 
  .timer {
       /* background: #c0c0c5; */
-      color:var(--black);
+      color: var(--black);
       font-family: var(--poppins);
       font-size: 26px;
       /* font-weight:600; */
       padding: 10px 20px;
       border-radius: 25px;
       margin-left: 2rem;
+      margin-top: 1.5rem;
 
     }
-
-
 
 .contact-section {
   margin-top: 2rem;
@@ -312,7 +313,7 @@ body {
   width: 100%;
   overflow: hidden;
   position: relative;
-  top: 20rem; /* hides the scrollbar */
+  /* top: 10rem; hides the scrollbar */
 }
 
 .footscroll {
@@ -393,6 +394,6 @@ body {
   width: 100%;
   overflow: hidden;
   position: relative;
-  top: 47rem; 
+  top: 36rem; 
   }
 }

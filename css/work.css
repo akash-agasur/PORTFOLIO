@@ -17,13 +17,13 @@
 }
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   background-color: var(--off-white);
   
 }
 .main{
-  height: 100vh;
+  /* height: 100vh; */
   width: 550px;
   /* border: 1px solid black; */
   background-color: var(--off-white);
@@ -299,19 +299,20 @@ text-decoration: none;
 color: var(--off-white);
 }
 
-
 .right{
  display: flex;
  width: 30%;
- /* flex-direction: row; */
- justify-content:end;
+ flex-direction: column;
+ /* justify-content:end; */
  /* padding-right: 20rem; */
  align-items: end;
   color: var(--black);
   font-family: var(--poppins);
   position: relative;
-  margin-bottom: 3rem;
+  margin-top: 35rem;
   margin-right: 3rem;
+  /* line-height: ; */
+ 
 }
 .right .location{
   position: absolute;
@@ -328,9 +329,9 @@ color: var(--off-white);
       padding: 10px 20px;
       border-radius: 25px;
       margin-left: 2rem;
+      margin-top: 1.5rem;
 
     }
-
 
 .contact-section {
   margin-top: 2rem;
@@ -404,7 +405,7 @@ color: var(--off-white);
   width: 100%;
   overflow: hidden;
   position: relative;
-  top: 120rem; 
+  /* top: 100rem;  */
 }
 
 .footscroll {

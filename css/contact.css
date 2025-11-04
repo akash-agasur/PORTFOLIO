@@ -145,19 +145,20 @@ body {
 
   
 }
-
 .right{
  display: flex;
  width: 30%;
- /* flex-direction: row; */
- justify-content:end;
+ flex-direction: column;
+ /* justify-content:end; */
  /* padding-right: 20rem; */
  align-items: end;
   color: var(--black);
   font-family: var(--poppins);
   position: relative;
-  margin-bottom: 3rem;
+  margin-top: 35rem;
   margin-right: 3rem;
+  /* line-height: ; */
+ 
 }
 .right .location{
   position: absolute;
@@ -174,9 +175,9 @@ body {
       padding: 10px 20px;
       border-radius: 25px;
       margin-left: 2rem;
+      margin-top: 1.5rem;
 
     }
-
 
 
 
