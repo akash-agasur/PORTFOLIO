@@ -26,6 +26,10 @@ ngtmode.addEventListener("click", () => {
   // console.log("hello");
   body.style.backgroundColor = "#1C1C2B";
   main.style.backgroundColor = "#1C1C2B";
+  gitline.style.backgroundColor = "#F6F5F7";
+  twtline.style.backgroundColor = " #F6F5F7";
+  linkline.style.backgroundColor = "#F6F5F7";
+  btnbox.style.backgroundColor = "#1C1C2B";
   // stack
   // .style.backgroundColor = "#1C1C2B";
   ngtwhite.forEach((element) => {

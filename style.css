@@ -42,7 +42,7 @@ body {
    position: fixed;
    /* top: 38rem; */
    bottom: 10px;
-   left: 34rem;
+   left: 33rem;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -132,6 +132,7 @@ body {
   width: 550px;
   /* border: 1px solid black; */
   background-color: var(--off-white);
+  margin-left: 4rem;
   /* margin-left: 30%; */
 }
 .nav{
@@ -740,7 +741,7 @@ footer, .h1{
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 550px) {
   .left{
     display: none;
   }
@@ -753,9 +754,10 @@ footer, .h1{
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
+
   /* border: 1px solid black; */
   background-color: var(--off-white);
-  /* margin-left: 30%; */
+  margin-left: 0;
 }
 
 
@@ -769,7 +771,7 @@ footer, .h1{
    position: relative;
    position: fixed;
    bottom: 10px;
-   left: 2.5rem;
+   left: 3rem;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -793,16 +795,17 @@ footer, .h1{
   flex-direction: column; 
 }
 .certify-1 .cbox1{
-width: 80%;
-padding-left: 6px;
+width: 100%;
+padding-left: 4rem;
 object-fit: contain;
+/* background-color: crimson; */
   border-right:1px solid rgb(212, 210, 210);
   border-top-left-radius: 30px;
    border-top-right-radius: 30px;
 }
 .certify-1 .cbox2{
   border-top-right-radius: 0;
-  width: 80%;
+  width: 100%;
 }
 
 .certify-2{
@@ -813,13 +816,15 @@ object-fit: contain;
   x; */
 }
 .certify-2 .cbox1{
-  width: 80%;
+  width: 100%;
   border-bottom-left-radius: 30px;
    border-bottom-right-radius: 30px;
 }
 .certify-2 .cbox2{
-  width: 80%;
+  width: 100%;
   border-left:1px solid rgb(212, 210, 210);
+  /* background-color: crimson; */
+  padding-left: 4rem;
   
 }
 .contact-container {
@@ -827,8 +832,12 @@ object-fit: contain;
   flex-direction: column-reverse;
 }
 .contact-left{
-  width: 60%;
+  width: 100%;
   
+}
+
+.contact-right br{
+display: none;
 }
 .footer-container {
   width: 100%;
