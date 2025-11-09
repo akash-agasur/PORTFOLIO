@@ -419,3 +419,39 @@ button:hover {
   top: 6rem; 
 }
 }
+
+
+
+@media (max-width: 700px) {
+  .left{
+    display: none;
+  }
+   .right{
+    display: none;
+  }
+
+  .main{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0;
+  }
+
+
+   .menu{
+  background-color: #353435;
+  /* opacity: .9; */
+  font-family: var(--poppins);
+  height: 60px;
+  width: 300px;
+  border-radius: 50px;
+   position: relative;
+   position: fixed;
+   bottom: 10px;
+   left: 2rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   color: white;
+}}
