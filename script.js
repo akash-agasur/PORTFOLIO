@@ -49,73 +49,73 @@ setInterval(updateTime, 1000); // har second update kare
 
 
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector(".main"),
-  smooth: true,
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector(".main"),
+//   smooth: true,
+// });
 
 
 
 
 
 
-// GSAP aur ScrollTrigger plugin activate karo
-gsap.registerPlugin(ScrollTrigger);
+// // GSAP aur ScrollTrigger plugin activate karo
+// gsap.registerPlugin(ScrollTrigger);
 
-// Animation likho
-gsap.to("works1", {
-  scrollTrigger: {
-    trigger: "",   // jab ye element viewport me aaye
-    start: "top 50%",   // kab animation start ho (page ke top se 80%)
-    end: "top 10%",     // kab khatam ho
-    scrub: true,        // smooth animation with scroll
-    markers: true       // debug markers (dekhne ke liye)
-  },
-  opacity: 1,
-  y: 0,
-  // duration: 1
-});
-
-
+// // Animation likho
+// gsap.to("works1", {
+//   scrollTrigger: {
+//     trigger: "",   // jab ye element viewport me aaye
+//     start: "top 50%",   // kab animation start ho (page ke top se 80%)
+//     end: "top 10%",     // kab khatam ho
+//     scrub: true,        // smooth animation with scroll
+//     markers: true       // debug markers (dekhne ke liye)
+//   },
+//   opacity: 1,
+//   y: 0,
+//   // duration: 1
+// });
 
 
-// // Wait for DOM to fully load
-// window.addEventListener("load", () => {
-//   // Initialize Locomotive Scroll
-//   const scroll = new LocomotiveScroll({
-//     el: document.querySelector(".main"), // Scroll container
-//     smooth: true,                        // Enable smooth scrolling
-//     smartphone: { smooth: true },
-//     tablet: { smooth: true },
-//   });
 
-//   // Tell ScrollTrigger to use Locomotive Scroll’s scroll position
-//   gsap.registerPlugin(ScrollTrigger);
 
-//   scroll.on("scroll", ScrollTrigger.update);
+// // // Wait for DOM to fully load
+// // window.addEventListener("load", () => {
+// //   // Initialize Locomotive Scroll
+// //   const scroll = new LocomotiveScroll({
+// //     el: document.querySelector(".main"), // Scroll container
+// //     smooth: true,                        // Enable smooth scrolling
+// //     smartphone: { smooth: true },
+// //     tablet: { smooth: true },
+// //   });
 
-//   ScrollTrigger.scrollerProxy(".main", {
-//     scrollTop(value) {
-//       return arguments.length
-//         ? scroll.scrollTo(value, 0, 0)
-//         : scroll.scroll.instance.scroll.y;
-//     },
-//     getBoundingClientRect() {
-//       return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-//     },
-//     pinType: document.querySelector(".main").style.transform ? "transform" : "fixed",
-//   });
+// //   // Tell ScrollTrigger to use Locomotive Scroll’s scroll position
+// //   gsap.registerPlugin(ScrollTrigger);
 
-//   // Example GSAP animation (you can remove or customize this)
-//   // gsap.from(".hero-section .name", {
-//   //   opacity: 0,
-//   //   y: 50,
-//   //   duration: 1.2,
-//   //   scrollTrigger: {
-//   //     trigger: ".hero-section .name",
-//   //     scroller: ".main",
-//   //     start: "top 80%",
-//   //     toggleActions: "play none none reverse",
+// //   scroll.on("scroll", ScrollTrigger.update);
+
+// //   ScrollTrigger.scrollerProxy(".main", {
+// //     scrollTop(value) {
+// //       return arguments.length
+// //         ? scroll.scrollTo(value, 0, 0)
+// //         : scroll.scroll.instance.scroll.y;
+// //     },
+// //     getBoundingClientRect() {
+// //       return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+// //     },
+// //     pinType: document.querySelector(".main").style.transform ? "transform" : "fixed",
+// //   });
+
+// //   // Example GSAP animation (you can remove or customize this)
+// //   // gsap.from(".hero-section .name", {
+// //   //   opacity: 0,
+// //   //   y: 50,
+// //   //   duration: 1.2,
+// //   //   scrollTrigger: {
+// //   //     trigger: ".hero-section .name",
+// //   //     scroller: ".main",
+// //   //     start: "top 80%",
+// //   //     toggleActions: "play none none reverse",
 //   //   },
 //   // });
 
