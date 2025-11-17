@@ -336,6 +336,44 @@ text-decoration: none;
 color: var(--off-white);
 }
 
+                                /* ------------work6 */
+.work6{
+  margin-top: 3rem;
+}
+.work-box6 img{
+ height: 400px;
+  width: 100%;
+  background-color: black;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.work-box6, h2{
+  font-family: var(--poppins);
+  margin-top: 10px;
+  color: var(--black);
+}
+.work-box6 p{
+  font-family: var(--poppins);
+  color: var(--black);
+  opacity: .7;
+
+}
+
+.w-button-6 button{
+  font-family: var(--poppins);
+  border: none;
+  padding: 7px 14px;
+border-radius: 10px;
+background-color: var(--black);
+margin-top: 1rem;
+}
+
+.w-button-6 button a{
+text-decoration: none;
+color: var(--off-white);
+}
+
+
 .right{
  display: flex;
  width: 30%;
